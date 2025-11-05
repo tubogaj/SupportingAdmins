@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Supporting Admins' Guide</title>
+
+<style>
+:root { --header-h: 84px; }
+
+body {
+  font-family: "Times New Roman", serif;
+  color: #000;
+  margin: 0;
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+/* ✅ Fixed header */
+.site-header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: rgba(255,255,255,0.98);
+  box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+  padding: 10px 30px;
+  z-index: 9999;
+  overflow: visible;
+}
+
+/* ✅ 2 fixed columns on desktop */
+.container {
+  padding: calc(var(--header-h) + 24px) 40px 60px 40px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.section {
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  padding: 25px;
+  text-align: center;
+}
+
+.section h2 { color: #007bff; margin-bottom: 15px; }
+
+ul { list-style-type: none; padding: 0; margin: 0; }
+
+.list-item {
+  background-color: #000;
+  color: #fff;
+  margin: 12px 0;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.list-item:hover { background-color: #dcdcdc; color: #000; }
+
+.highlight {
+  background-color: yellow;
+  color: #000;
+  font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  .container { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 700px) {
+  .site-header { flex-direction: column; align-items: stretch; }
+  .search-container { order: 1; margin-bottom: 8px; }
+  .container { padding: calc(var(--header-h) + 16px) 20px 40px 20px; grid-template-columns: 1fr; }
+}
+
+/* ✅ Search bar */
+.search-container { display: flex; align-items: center; gap: 8px; }
+.search-container input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 220px;
+  transition: all 0.3s ease;
+}
+.search-container input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0,123,255,0.4);
+}
+</style>
+</head>
+<body>
+
+<!-- ✅ Header -->
+<header class="site-header" id="siteHeader">
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search topics..." />
+  </div>
+</header>
+
+<div class="container" id="mainContainer">
+
+  <!-- ✅ Column 1 -->
+  <div class="section">
+    <h2>SAs</h2>
+    <ul>
+      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1ZkUQE4XA3qpMlmUIw11nvAt8ekctwFaZ-4E7Lgsmn6c/edit?gid=823108276#gid=823108276">Lead File Assignment</li>
+      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1IN9QL5-Z97r-FqzEP01CuIW6cFzPKfdRjmPnxqwY9aw/edit?pli=1&gid=540652677#gid=540652677">Not Onboarded Sheet (AMs)</li>
+      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/141l_aCx74MwdQzH5Vzjc0OQuvQjSVE8Z78mOmSyfxIA/edit?gid=1110318478#gid=1110318478">Not Onboarded Sheet per Sales Team (SA Copy)</li>
+      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1r_0YPpotm5dQY9frsDPkMHezpQU7QR6u0Zm2nkK2jlE/edit?gid=886009352#gid=886009352">1-Day Completion of Onboarding - Client List</li>
+      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1GZ8PwKgS9SMwP7FCBDMVEFw1-YJ21yY1BbJM4gTUr8s/edit?gid=0#gid=0">RCS - Notification Emailed Clients</li>
+      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/19LJZlT9dQu_OTWS8J8-_AVD3D19wYdh7FWfe8RbTauM/edit?gid=0#gid=0">FXBLUE Links - RCS</li>
+      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1q4_9O-3bgJ9eICHM7O57ZO82KVZVJdV5b_iGwav2Oxs/edit?gid=0#gid=0">Pipedrive/GHL Tracker</li>
+      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1pwcXcO5TTaE-nyyaILDJGEoqY7XeVEPtmp8I86Lpt40/edit?gid=0#gid=0">Email Tracking - GHL Conversations</li>
+      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1gXanI2gVjshBn4JJDwaw5L0izDVcmfypblf1pJRmCc0/edit?gid=929082391#gid=929082391">RCS Clients List</li>
+      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/12jzoiAY-hISbH-Ke0jikSaD-6YExlGJH7i3hFXPOAD8/edit?pli=1&gid=0#gid=0">Ridge Payments</li>
+      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1jiLj_4mitPk03B-Px0wOqw26onQuqYtDvHUcHcDgrO8/edit?pli=1&gid=300485498#gid=300485498">Monthly Subscription - RCS</li>
+
+      <!-- ✅ Newly added links under SAs -->
+      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1TLvUJqwXN-vqtLN4OOnHtoBltYi2LKq_f28TYh8cpYI/edit?gid=85221713#gid=85221713">KeyMaker Details</li>
+      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1XCo5j2g5OadW-fvtctPSjNnCXjNdfBEiO91arvcJ1aY/edit?pli=1&gid=0#gid=0">Ridge Master Key List</li>
+      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1ZEuTGamh8rXbKZZo2GXgJPaIbIMIG7TFhRKYc58ffVg/edit?gid=796585018#gid=796585018">Revoked LKs (RIDGE)</li>
+      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/19IpaLtmCZ_8Gz9TpOStavQurJ-oh5jLs7VDJLChOrPo/edit?gid=0#gid=0">Ridge Calls Pipeline (Email Recap + Survey)</li>
+      <li class="list-item" data-link="https://drive.google.com/drive/u/0/folders/1Kyawrx24yw7hSpWixC1dtNrXl4PYW5Sp">Call Recordings Folder</li>
+      <li class="list-item" data-link="https://drive.google.com/drive/folders/1KvIykh0vitV40Am1gNpeBGbSsXygcy9T">License Agreements Folder</li>
+      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1WToL58C6_A8V3o3HUdkne5eyxrbKf8AbIcLQAmXiXSw/edit?resourcekey=&pli=1&gid=1408776377#gid=1408776377">Serial Order Sheet</li>
+      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1XoWg4B4GBSUFeMf9FYZSs1DzwoaYIS8-YJHgr_Bf-gw/edit?resourcekey=&gid=321108633#gid=321108633">Affinity Order Sheet</li>
+      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1FEptubpUfvs0pu_OeM7prOim3BqDxgjzo4TMMsjsWQg/edit?resourcekey=&pli=1&gid=52242670#gid=52242670">In-House Order Sheet</li>
+      <li class="list-item" data-link="https://app.gohighlevel.com/v2/location/vuk4OKli8pO4r0DVB8gv/contacts/smart_list/All">GHL</li>
+      <li class="list-item" data-link="https://app.ridgecapitalsolutions.com/dashboard/clients">KeyMaker</li>
+      <li class="list-item" data-link="https://app.pandadoc.com/a/#/documents-next?tab=team">Pandadoc</li>
+      <li class="list-item" data-link="https://drive.google.com/file/d/1-b0HoHjXr3878XuKTEmor2VHFAjygDKu/view?usp=sharing">Social Trader Tools (STT)</li>
+      <li class="list-item" data-link="https://my.socialtradertools.com/whitelabel/users">Whitelabel User</li>
+      <li class="list-item" data-link="https://my.socialtradertools.com/followers">Signal Follower</li>
+      <li class="list-item" data-link="https://whop.com/dashboard/biz_lMRPLXnmu79Q4K/payments/">Whop</li>
+      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1AZA90cR-mS9txFmh9c-969DE6L9akNGEMpmGPRU10pQ/edit?gid=0#gid=0">Hubstaff Checking</li>
+      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1ki4lEycI_bPUiHv1N-p3tIEwbnLEXVSIAZC5MYbqPFI/edit?gid=1006185756#gid=1006185756">Login Accounts</li>
+      <li class="list-item" data-link="https://docs.google.com/document/d/1z5rygfVhD6uWEVvXx4BxSMbW8Q8x9y984-QbUvnB4Mc/edit?tab=t.fo2rikoqbu8q">Daily Task - Supporting Admin Team</li>
+    </ul>
+  </div>
+
+  <!-- ✅ Column 2 -->
+  <div class="section">
+    <h2>Velantra</h2>
+    <ul>
+      <li class="list-item" data-link="https://docs.google.com/document/d/1ksMvSix4IZhVyyE8UzLMc4L0HINxFkh3B8KXpMO99vE/edit?tab=t.l13ye5l0744g">Velantra Onboarding SOPs</li>
+      <li class="list-item" data-link="https://drive.google.com/drive/folders/192FKaDmI1314tdeDEYjNX7vX7YzhSFyy">Call Recording Folder</li>
+      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1yLZvDNesBnuRxcmAdj4t-Cdf5k0d82fdg9XfbYJdiXo/edit?gid=0#gid=0">Calls Pipeline</li>
+      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1fcEAa1Fk0MZFB5cdixbmWNGJGtPjqhYTcidHbkrHa4E/edit?gid=0#gid=0">Clients - With Onboarding Tracker (Velantra Copy)</li>
+      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1vsOumcEXgX0eAv2Zje0lDevvjP1eIceRqzIdyfKEvGM/edit?gid=2117329813#gid=2117329813">FX Blue / My FX Books Tracking (Velantra Copy)</li>
+      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1-eeWBGPMcPd2TKhtCtpA9x0KXI-kWIGoarUnr-7nqWI/edit?gid=122613386#gid=122613386">Keymaker Tracker (Internal)</li>
+      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1vmsro2MKNKR5wXKBFeo-E4EyOVOZiGsOyTgVhKvi2Wc/edit?gid=0#gid=0">Lead Tracker (Internal)</li>
+      <li class="list-item" data-link="https://docs.google.com/document/d/1KCrrzp1UBmkgqtVaNmOEP1AQouwPXzfinROJPY8oMA0/edit?tab=t.d0cm4yvfnk7u">Email Template</li>
+      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1B5PwNUaXGgitFRW1d2WaT-oA8iMIKH13qIGrTkvMlbQ/edit?gid=0#gid=0">Velantra Offer Links</li>
+      <li class="list-item" data-link="https://app.velantra.ai/dashboard/clients">Keymaker</li>
+      <li class="list-item" data-link="https://app.gohighlevel.com/v2/location/DW87qgrcpbHIT1fcAsTZ/contacts/detail/wuRwuXsUE6YUzATI5NoD">GHL</li>
+    </ul>
+  </div>
+
+</div>
+
+<script>
+function syncHeaderOffset() {
+  const header = document.getElementById('siteHeader');
+  if (!header) return;
+  const h = header.offsetHeight;
+  document.documentElement.style.setProperty('--header-h', h + 'px');
+}
+
+window.addEventListener('load', syncHeaderOffset);
+window.addEventListener('resize', syncHeaderOffset);
+
+// ✅ Click actions
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.list-item').forEach(item => {
+    item.addEventListener('click', () => {
+      const link = item.getAttribute('data-link');
+      const description = item.getAttribute('data-description');
+      const title = item.textContent.trim();
+
+      if (link) {
+        window.open(link, '_blank');
+      } else if (description) {
+        const popup = `
+        <!DOCTYPE html>
+        <html lang='en'>
+        <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <title>${title}</title>
+        <style>
+          body { font-family: 'Times New Roman', serif; color: #444; padding: 30px; line-height: 1.6; }
+          h1 { color: #007bff; }
+        </style>
+        </head>
+        <body>
+          <h1>${title}</h1>
+          <p>${description}</p>
+        </body>
+        </html>`;
+        const tab = window.open('', '_blank');
+        tab.document.write(popup);
+        tab.document.close();
+      }
+    });
+  });
+
+  // ✅ Search function
+  const searchInput = document.getElementById('searchInput');
+  const listItems = document.querySelectorAll('.list-item');
+  searchInput.addEventListener('input', () => {
+    const filter = searchInput.value.toLowerCase();
+    listItems.forEach(item => {
+      const text = item.textContent;
+      const lower = text.toLowerCase();
+      if (lower.includes(filter)) {
+        item.style.display = "";
+        if (filter) {
+          const regex = new RegExp(`(${filter.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+          item.innerHTML = text.replace(regex, "<span class='highlight'>$1</span>");
+        } else {
+          item.innerHTML = text;
+        }
+      } else {
+        item.style.display = "none";
+        item.innerHTML = text;
+      }
+    });
+  });
+});
+</script>
+</body>
+</html>
