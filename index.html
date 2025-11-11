@@ -51,6 +51,7 @@ body {
 ul { list-style-type: none; padding: 0; margin: 0; }
 
 .list-item {
+  display: block;
   background-color: #000;
   color: #fff;
   margin: 12px 0;
@@ -58,6 +59,7 @@ ul { list-style-type: none; padding: 0; margin: 0; }
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .list-item:hover { background-color: #dcdcdc; color: #000; }
@@ -110,29 +112,25 @@ ul { list-style-type: none; padding: 0; margin: 0; }
   <div class="section">
     <h2>SAs</h2>
     <ul>
-      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1ZkUQE4XA3qpMlmUIw11nvAt8ekctwFaZ-4E7Lgsmn6c/edit?gid=823108276#gid=823108276">Lead File Assignment</li>
-      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1IN9QL5-Z97s-FqzEP01CuIW6cFzPKfdRjmPnxqwY9aw/edit?pli=1&gid=540652677#gid=540652677">Not Onboarded Sheet (AMs)</li>
-      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1r_0YPpotm5dQY9frsDPkMHezpQU7QR6u0Zm2nkK2jlE/edit?gid=886009352#gid=886009352">1-Day Completion of Onboarding – Client List</li>
-      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1GZ8PwKgS9SMwP7FCBDMVEFw1-YJ21yY1BbJM4gTUr8s/edit?gid=0#gid=0">RCS – Notification Emailed Clients</li>
-      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/19LJZlT9dQu_OTWS8J8-_AVD3D19wYdh7FWfe8RbTauM/edit?gid=0#gid=0">FXBLUE Links – RCS</li>
-      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1q4_9O-3bgJ9eICHM7O57ZO82KVZVJdV5b_iGwav2Oxs/edit?gid=0#gid=0">Pipedrive/GHL Tracker</li>
-      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/12jzoiAY-hISbH-Ke0jikSaD-6YExlGJH7i3hFXPOAD8/edit?pli=1&gid=0#gid=0">Ridge Payments</li>
-      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1jiLj_4mitPk03B-Px0wOqw26onQuqYtDvHUcHcDgrO8/edit?pli=1&gid=300485498#gid=300485498">Monthly Subscription – RCS</li>
-
-      <!-- ✅ Newly added links under SAs -->
-      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1TLvUJqwXN-vqtLN4OOnHtoBltYi2LKq_f28TYh8cpYI/edit?gid=85221713#gid=85221713">KeyMaker Details</li>
-      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1XCo5j2g5OadW-fvtctPSjNnCXjNdfBEiO91arvcJ1aY/edit?pli=1&gid=0#gid=0">Ridge Master Key List</li>
-      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1ZEuTGamh8KXbKZZo2GXgJPaIbIMIG7TFhRKYc58ffVg/edit?gid=796585018#gid=796585018">Revoked LKs (RIDGE)</li>
-      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/19IpaLtmCZ_8Gz9TpOStavQurJ-oh5jLs7VDJLChOrPo/edit?gid=0#gid=0">Ridge Calls Pipeline (Email Recap + Survey)</li>
-      <li class="list-item" data-link="https://drive.google.com/drive/u/0/folders/1Kyawrx24yw7hSpWixC1dtNrXl4PYW5Sp">Call Recordings Folder</li>
-      <li class="list-item" data-link="https://drive.google.com/drive/folders/1KvIykh0vitV40Am1gNpeBGbSsXygcy9T">License Agreements Folder</li>
-      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1WToL58C6_A8V3o3HUdkne5eyxrbKf8AbIcLQAmXiXSw/edit?resourcekey=&pli=1&gid=1408776377#gid=1408776377">Serial Order Sheet</li>
-      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1XoWg4B4GBSUFeMf9FYZSs1DzwoaYIS8-YJHgr_Bf-gw/edit?resourcekey=&gid=321108633#gid=321108633">Affinity Order Sheet</li>
-      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1FEptubpUfvs0pu_OeM7prOim3BqDxgjzo4TMMsjsWQg/edit?resourcekey=&pli=1&gid=52242670#gid=52242670">In-House Order Sheet</li>
-
-      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1AZA90cR-mS9txFmh9c-969DE6L9akNGEMpmGPRU10pQ/edit?gid=0#gid=0">Hubstaff Checking</li>
-      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1ki4lEycI_bPUiHv1N-p3tIEwbnLEXVSIAZC5MYbqPFI/edit?gid=1006185756#gid=1006185756">Login Accounts</li>
-      <li class="list-item" data-link="https://docs.google.com/document/d/1z5rygfVhD6uWEVvXx4BxSMbW8Q8x9y984-QbUvnB4Mc/edit?tab=t.fo2rikoqbu8q">Daily Task – Supporting Admin Team</li>
+      <li><a class="list-item" href="https://docs.google.com/spreadsheets/d/1ZkUQE4XA3qpMlmUIw11nvAt8ekctwFaZ-4E7Lgsmn6c/edit?gid=823108276#gid=823108276" target="_blank" rel="noopener noreferrer">Lead File Assignment</a></li>
+      <li><a class="list-item" href="https://docs.google.com/spreadsheets/d/1IN9QL5-Z97r-FqzEP01CuIW6cFzPKfdRjmPnxqwY9aw/edit?gid=540652677#gid=540652677" target="_blank" rel="noopener noreferrer">Not Onboarded Sheet (AMs)</a></li>
+      <li><a class="list-item" href="https://docs.google.com/spreadsheets/d/141l_aCx74MwdQzH5Vzjc0OQuvQjSVE8Z78mOmSyfxIA/edit?gid=1110318478#gid=1110318478" target="_blank" rel="noopener noreferrer">Not Onboarded Sheet per Sales Team (SA Copy)</a></li>
+      <li><a class="list-item" href="https://docs.google.com/spreadsheets/d/1r_0YPpotm5dQY9frsDPkMHezpQU7QR6u0Zm2nkK2jlE/edit?gid=886009352#gid=886009352" target="_blank" rel="noopener noreferrer">1-Day Completion of Onboarding - Client List</a></li>
+      <li><a class="list-item" href="https://docs.google.com/spreadsheets/d/1GZ8PwKgS9SMwP7FCBDMVEFw1-YJ21yY1BbJM4gTUr8s/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer">RCS - Notification Emailed Clients</a></li>
+      <li><a class="list-item" href="https://docs.google.com/spreadsheets/d/19LJZlT9dQu_OTWS8J8-_AVD3D19wYdh7FWfe8RbTauM/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer">FXBLUE Links - RCS</a></li>
+      <li><a class="list-item" href="https://docs.google.com/spreadsheets/d/1q4_9O-3bgJ9eICHM7O57ZO82KVZVJdV5b_iGwav2Oxs/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer">Pipedrive/GHL Tracker</a></li>
+      <li><a class="list-item" href="https://docs.google.com/spreadsheets/d/1pwcXcO5TTaE-nyyaILDJGEoqY7XeVEPtmp8I86Lpt40/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer">Email Tracking - GHL Conversations</a></li>
+      <li><a class="list-item" href="https://docs.google.com/spreadsheets/d/1gXanI2gVjshBn4JJDwaw5L0izDVcmfypblf1pJRmCc0/edit?gid=929082391#gid=929082391" target="_blank" rel="noopener noreferrer">RCS Clients List</a></li>
+      <li><a class="list-item" href="https://docs.google.com/spreadsheets/d/12jzoiAY-hISbH-Ke0jikSaD-6YExlGJH7i3hFXPOAD8/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer">Ridge Payments</a></li>
+      <li><a class="list-item" href="https://docs.google.com/spreadsheets/d/1jiLj_4mitPk03B-Px0wOqw26onQuqYtDvHUcHcDgrO8/edit?gid=300485498#gid=300485498" target="_blank" rel="noopener noreferrer">Monthly Subscription - RCS</a></li>
+      <li><a class="list-item" href="https://docs.google.com/spreadsheets/d/1TLvUJqwXN-vqtLN4OOnHtoBltYi2LKq_f28TYh8cpYI/edit?gid=85221713#gid=85221713" target="_blank" rel="noopener noreferrer">KeyMaker Details</a></li>
+      <li><a class="list-item" href="https://docs.google.com/spreadsheets/d/1XCo5j2g5OadW-fvtctPSjNnCXjNdfBEiO91arvcJ1aY/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer">Ridge Master Key List</a></li>
+      <li><a class="list-item" href="https://docs.google.com/spreadsheets/d/1ZEuTGamh8rXbKZZo2GXgJPaIbIMIG7TFhRKYc58ffVg/edit?gid=796585018#gid=796585018" target="_blank" rel="noopener noreferrer">Revoked LKs (RIDGE)</a></li>
+      <li><a class="list-item" href="https://docs.google.com/spreadsheets/d/19IpaLtmCZ_8Gz9TpOStavQurJ-oh5jLs7VDJLChOrPo/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer">Ridge Calls Pipeline (Email Recap + Survey)</a></li>
+      <li><a class="list-item" href="https://drive.google.com/drive/u/0/folders/1Kyawrx24yw7hSpWixC1dtNrXl4PYW5Sp" target="_blank" rel="noopener noreferrer">Call Recordings Folder</a></li>
+      <li><a class="list-item" href="https://drive.google.com/drive/folders/1KvIykh0vitV40Am1gNpeBGbSsXygcy9T" target="_blank" rel="noopener noreferrer">License Agreements Folder</a></li>
+      <li><a class="list-item" href="https://docs.google.com/spreadsheets/d/1WToL58C6_A8V3o3HUdkne5eyxrbKf8AbIcLQAmXiXSw/edit?gid=1408776377#gid=1408776377" target="_blank" rel="noopener noreferrer">Serial Order Sheet</a></li>
+      <li><a class="list-item" href="https://docs.google.com/spreadsheets/d/1FEptubpUfvs0pu_OeM7prOim3BqDxgjzo4TMMsjsWQg/edit?gid=52242670#gid=52242670" target="_blank" rel="noopener noreferrer">In-House Order Sheet</a></li>
     </ul>
   </div>
 
@@ -140,17 +138,10 @@ ul { list-style-type: none; padding: 0; margin: 0; }
   <div class="section">
     <h2>Velantra</h2>
     <ul>
-      <li class="list-item" data-link="https://docs.google.com/document/d/1ksMvSix4IZhVyyE8UzLMc4L0HINxFkh3B8KXpMO99vE/edit?tab=t.l13ye5l0744g">Velantra Onboarding SOPs</li>
-      <li class="list-item" data-link="https://drive.google.com/drive/folders/192FKaDmI1314tdeDEYjNX7vX7YzhSFyy">Call Recording Folder</li>
-      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1yLZvDNesBnuRxcmAdj4t-Cdf5k0d82fdg9XfbYJdiXo/edit?gid=0#gid=0">Calls Pipeline</li>
-      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1fcEAa1Fk0MZFB5cdixbmWNGJGtPjqhYTcidHbkrHa4E/edit?gid=0#gid=0">Clients – With Onboarding Tracker (Velantra Copy)</li>
-      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1vsOumcEXgX0eAv2Zje0lDevvjP1eIceRqzIdyfKEvGM/edit?gid=2117329813#gid=2117329813">FX Blue / My FX Books Tracking (Velantra Copy)</li>
-      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1-eeWBGPMcPd2TKhtCtpA9x0KXI-kWIGoarUnr-7nqWI/edit?gid=122613386#gid=122613386">Keymaker Tracker (Internal)</li>
-      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1vmsro2MKNKR5wXKBFeo-E4EyOVOZiGsOyTgVhKvi2Wc/edit?gid=0#gid=0">Lead Tracker (Internal)</li>
-      <li class="list-item" data-link="https://docs.google.com/document/d/1KCrrzp1UBmkgqtVaNmOEP1AQouwPXzfinROJPY8oMA0/edit?tab=t.d0cm4yvfnk7u">Email Template</li>
-      <li class="list-item" data-link="https://docs.google.com/spreadsheets/d/1B5PwNUaXGgitFRW1d2WaT-oA8iMIKH13qIGrTkvMlbQ/edit?gid=0#gid=0">Velantra Offer Links</li>
-      <li class="list-item" data-link="https://app.velantra.ai/dashboard/clients">Keymaker</li>
-      <li class="list-item" data-link="https://app.gohighlevel.com/v2/location/DW87qgrcpbHIT1fcAsTZ/contacts/detail/wuRwuXsUE6YUzATI5NoD">GHL</li>
+      <li><a class="list-item" href="https://docs.google.com/document/d/1ksMvSix4IZhVyyE8UzLMc4L0HINxFkh3B8KXpMO99vE/edit" target="_blank" rel="noopener noreferrer">Velantra Onboarding SOPs</a></li>
+      <li><a class="list-item" href="https://drive.google.com/drive/folders/192FKaDmI1314tdeDEYjNX7vX7YzhSFyy" target="_blank" rel="noopener noreferrer">Call Recording Folder</a></li>
+      <li><a class="list-item" href="https://docs.google.com/spreadsheets/d/1yLZvDNesBnuRxcmAdj4t-Cdf5k0d82fdg9XfbYJdiXo/edit" target="_blank" rel="noopener noreferrer">Calls Pipeline</a></li>
+      <li><a class="list-item" href="https://app.velantra.ai/dashboard/clients" target="_blank" rel="noopener noreferrer">Velantra Dashboard</a></li>
     </ul>
   </div>
 
@@ -158,67 +149,20 @@ ul { list-style-type: none; padding: 0; margin: 0; }
   <div class="section">
     <h2>Applications</h2>
     <ul>
-      <li class="list-item" data-link="https://app.gohighlevel.com/v2/location/vuk4OKli8pO4r0DVB8gv/contacts/smart_list/All">GHL</li>
-      <li class="list-item" data-link="https://app.ridgecapitalsolutions.com/dashboard/clients">KeyMaker</li>
-      <li class="list-item" data-link="https://app.pandadoc.com/a/#/documents-next?tab=team">Pandadoc</li>
-      <li class="list-item" data-link="https://drive.google.com/file/d/1-b0HoHjXr3878XuKTEmor2VHFAjygDKu/view?usp=sharing">Social Trader Tools (STT)</li>
-      <li class="list-item" data-link="https://my.socialtradertools.com/whitelabel/users">Whitelabel User</li>
-      <li class="list-item" data-link="https://my.socialtradertools.com/followers">Signal Follower</li>
-      <li class="list-item" data-link="https://whop.com/dashboard/biz_lMRPLXnmu79Q4K/payments/">Whop</li>
-      <li class="list-item" data-link="https://app.hubstaff.com/dashboard/659879/team">Hubstaff</li>
-
+      <li><a class="list-item" href="https://app.gohighlevel.com/" target="_blank" rel="noopener noreferrer">GoHighLevel</a></li>
+      <li><a class="list-item" href="https://app.pandadoc.com/" target="_blank" rel="noopener noreferrer">PandaDoc</a></li>
+      <li><a class="list-item" href="https://my.socialtradertools.com/" target="_blank" rel="noopener noreferrer">Social Trader Tools</a></li>
+      <li><a class="list-item" href="https://whop.com/dashboard/" target="_blank" rel="noopener noreferrer">Whop Dashboard</a></li>
+      <li><a class="list-item" href="https://hubstaff.com/" target="_blank" rel="noopener noreferrer">Hubstaff</a></li>
+      <li><a class="list-item" href="https://chat.openai.com/" target="_blank" rel="noopener noreferrer">ChatGPT</a></li>
+      <li><a class="list-item" href="https://drive.google.com/" target="_blank" rel="noopener noreferrer">Google Drive</a></li>
     </ul>
   </div>
 
 </div>
 
 <script>
-function syncHeaderOffset() {
-  const header = document.getElementById('siteHeader');
-  if (!header) return;
-  const h = header.offsetHeight;
-  document.documentElement.style.setProperty('--header-h', h + 'px');
-}
-
-window.addEventListener('load', syncHeaderOffset);
-window.addEventListener('resize', syncHeaderOffset);
-
-// ✅ Click actions
 document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.list-item').forEach(item => {
-    item.addEventListener('click', () => {
-      const link = item.getAttribute('data-link');
-      const description = item.getAttribute('data-description');
-      const title = item.textContent.trim();
-
-      if (link) {
-        window.open(link, '_blank');
-      } else if (description) {
-        const popup = \`
-        <!DOCTYPE html>
-        <html lang='en'>
-        <head>
-        <meta charset='UTF-8'>
-        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-        <title>\${title}</title>
-        <style>
-          body { font-family: 'Times New Roman', serif; color: #444; padding: 30px; line-height: 1.6; }
-          h1 { color: #007bff; }
-        </style>
-        </head>
-        <body>
-          <h1>\${title}</h1>
-          <p>\${description}</p>
-        </body>
-        </html>\`;
-        const tab = window.open('', '_blank');
-        tab.document.write(popup);
-        tab.document.close();
-      }
-    });
-  });
-
-  // ✅ Search function
   const searchInput = document.getElementById('searchInput');
   const listItems = document.querySelectorAll('.list-item');
   searchInput.addEventListener('input', () => {
@@ -227,16 +171,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const text = item.textContent;
       const lower = text.toLowerCase();
       if (lower.includes(filter)) {
-        item.style.display = "";
-        if (filter) {
-          const regex = new RegExp(\`(\${filter.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\\\$&')})\`, 'gi');
-          item.innerHTML = text.replace(regex, "<span class='highlight'>$1</span>");
-        } else {
-          item.innerHTML = text;
-        }
+        item.parentElement.style.display = "";
+        const regex = new RegExp(`(${filter.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+        item.innerHTML = text.replace(regex, "<span class='highlight'>$1</span>");
       } else {
-        item.style.display = "none";
-        item.innerHTML = text;
+        item.parentElement.style.display = "none";
       }
     });
   });
